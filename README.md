@@ -29,9 +29,14 @@ Displays files/folders with color coding to reflect permissions and states (exec
 
 Run the following commands directly in Termux:
 
+
 apt update && apt install wget -y
+
 cd ~
+
 wget -O termux_youcef_ri.sh https://raw.githubusercontent.com/youcefrizoug/custom_termux/main/termux_youcef_ri.sh
+
 chmod +x termux_youcef_ri.sh
+
 ./termux_youcef_ri.sh
 

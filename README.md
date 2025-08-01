@@ -30,13 +30,67 @@ Displays files/folders with color coding to reflect permissions and states (exec
 Run the following commands directly in Termux:
 
 
-apt update && apt install wget -y
 
-cd ~
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Termux Setup Commands</title>
+<style>
+body { font-family: Arial, sans-serif; margin: 40px; background: #f9f9f9; }
+.code-block { background: #272822; color: #f8f8f2; padding: 15px; border-radius: 8px; margin-bottom: 20px; position: relative; }
+.copy-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 6px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy-btn:hover { background-color: #45a049; }
+</style>
+</head>
+<body>
 
-wget -O termux_youcef_ri.sh https://raw.githubusercontent.com/youcefrizoug/custom_termux/main/termux_youcef_ri.sh
+<h1>Termux Setup Commands</h1>
 
-chmod +x termux_youcef_ri.sh
+<div class="code-block">
+<pre id="cmd1">apt update && apt install wget -y</pre>
+<button class="copy-btn" onclick="copyToClipboard('cmd1')">Copy</button>
+</div>
 
-./termux_youcef_ri.sh
+<div class="code-block">
+<pre id="cmd2">cd ~</pre>
+<button class="copy-btn" onclick="copyToClipboard('cmd2')">Copy</button>
+</div>
+
+<div class="code-block">
+<pre id="cmd3">wget -O termux_youcef_ri.sh https://raw.githubusercontent.com/youcefrizoug/custom_termux/main/termux_youcef_ri.sh</pre>
+<button class="copy-btn" onclick="copyToClipboard('cmd3')">Copy</button>
+</div>
+
+<div class="code-block">
+<pre id="cmd4">chmod +x termux_youcef_ri.sh</pre>
+<button class="copy-btn" onclick="copyToClipboard('cmd4')">Copy</button>
+</div>
+
+<div class="code-block">
+<pre id="cmd5">./termux_youcef_ri.sh</pre>
+<button class="copy-btn" onclick="copyToClipboard('cmd5')">Copy</button>
+</div>
+
+<script>
+function copyToClipboard(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text).then(() => {
+    alert('Copied!');
+  });
+}
+</script>
+
+</body>
+</html>
 

@@ -30,7 +30,7 @@ Displays files/folders with color coding to reflect permissions and states (exec
 Run the following commands directly in Termux:
 
 ```bash
-apt update && apt install wget -y
+apt update && apt install wget xz-utils -y
 ```
 
 ```bash
